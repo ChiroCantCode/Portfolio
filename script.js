@@ -4,21 +4,21 @@ function handleKeyPress(event) {
         var content = document.getElementById("content");
         
         if (userInput === "ZmxhZzEyMzQ1") {
-            content.innerHTML = "<p>Tu y es presque. Je vais te donner un indice : Base64</p>";
+            content.innerHTML = "<p>You are nearly there!, use /hint to get some help.</p>";
         } else if (userInput === decodeBase64("ZmxhZzEyMzQ1")) {
-            content.innerHTML = "<p>Bravo tu as réussi à trouver mon mot de passe !!</p>";
-        } else if (userInput.toLowerCase() === "crédit") {
-            content.innerHTML = "<p>Ce site a entièrement été créé par Chiro_code.</p>";
-        } else if (userInput.toLowerCase() === "moi") {
-            content.innerHTML = "<p>Je suis un jeune développeur de 15 ans déterminé.</p>";
+            content.innerHTML = "<p>GG! You just found my password ! !!</p>";
+        } else if (userInput.toLowerCase() === "credits") {
+            content.innerHTML = "<p>This website was entierely made by Chiro_code.</p>";
+        } else if (userInput.toLowerCase() === "me") {
+            content.innerHTML = "<p>I am a young coder who want to learn a lot of pragramming language like: c++, java, php. I already know: javascript, python, css, html.</p>";
         } else if (userInput.toLowerCase() === "help") {
-            content.innerHTML = "<p>Pour plus d'informations, tapez 'crédit', 'moi', ou 'secret'.</p>";
+            content.innerHTML = "<p>For more information, you can type: me, credits, secret</p>";
         } else if (userInput.toLowerCase() === "secret") {
-            content.innerHTML = "<p>Essaie de trouver le mot de passe caché dans ce site web ! (indice : appuie sur F12,)</p>";
-        } else if (userInput.toLowerCase() === "/indice") {
-            content.innerHTML = "<p>Utilise base64 pour décoder le mot de passe (tu peux aussi demander à ChatGPT).</p>";
+            content.innerHTML = "<p>Try to find the hidden password inside of my website! (hint : the answer might be hidden behind some kind of encryption?</p>";
+        } else if (userInput.toLowerCase() === "/hint") {
+            content.innerHTML = "<p>Base64</p>";
         } else {
-            content.innerHTML = "<p>Votre commande n'est pas valide.</p>";
+            content.innerHTML = "<p>this is not a valid command ):.</p>";
         }
 
         document.getElementById("userInput").value = '';
