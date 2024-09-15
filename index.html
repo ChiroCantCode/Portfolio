@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiro_Code_Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/chiro.jpg" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur le site de Chiro_code</h1>
+        <pre class="ascii-art">
+_________ .__    .__                 _________            .___      
+\_   ___ \|  |__ |__|______  ____    \_   ___ \  ____   __| _/____  
+/    \  \/|  |  \|  \_  __ \/  _ \   /    \  \/ /  _ \ / __ |/ __ \ 
+\     \___|   Y  \  ||  | \(  <_> )  \     \___(  <_> ) /_/ \  ___/ 
+ \______  /___|  /__||__|   \____/____\______  /\____/\____ |\___  >
+        \/     \/               /____/      \/            \/    \/ 
+        </pre>
+
+        <div id="content"></div>
+    </div>
+
+    <div class="input-container">
+        <p class="instruction">Tape 'help' pour plus d'info</p>
+        <input type="text" id="userInput" placeholder="Tapez ici..." onkeypress="handleKeyPress(event)">
+    </div>
+
+    <!-- Inclure le script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
